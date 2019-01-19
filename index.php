@@ -1,3 +1,3 @@
 <?php
-    $version = getenv('REMOTE_ADDR') ?: "0.0";
+    $version = getenv('APP_VERSION') ?: "0.0";
     echo "HelloWorld: $version"; 
