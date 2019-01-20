@@ -4,6 +4,6 @@
     echo "<pre>";
     echo "HelloWorld", PHP_EOL;
     echo "version: $version", PHP_EOL;
-    echo "version: $version", PHP_EOL;
+    echo "hostname: $hostname", PHP_EOL;
     echo "</pre>";
     phpinfo();
