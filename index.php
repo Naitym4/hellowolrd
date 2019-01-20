@@ -1,3 +1,9 @@
 <?php
     $version = getenv('APP_VERSION') ?: "0.0";
-    echo "HelloWorld: $version"; 
+    $hostname = getenv('HOSTNAME') ?: "";
+    echo "<pre>";
+    echo "HelloWorld", PHP_EOL;
+    echo "version: $version", PHP_EOL;
+    echo "version: $version", PHP_EOL;
+    echo "</pre>";
+    phpinfo();
