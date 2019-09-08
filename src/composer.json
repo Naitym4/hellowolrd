@@ -9,6 +9,14 @@
             "email": "contato@marcosborges.com"
         }
     ],
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.3"
+    }
 }

@@ -1,19 +1,13 @@
 <?php
 
-class HelloWorld {
+final class HelloWorld {
     
-    public $lang = "pt";
-
-    private $_messages = [
-        "en" => "Hellow World",
+    private static $_messages = [
+        "en" => "Hello World",
         "pt" => "Olá mundo"
     ];
-
-    public function __constructor($lang = "pt"){
-        $this->lang = $lang;
-    }
     
-    public function getMessage(){
-        return isset($this->_messages[$this->lang]) ? $this->_messages[$this->lang] : false;
+    public static function getMessage($lang){
+        return isset(self::$_messages[$lang]) ? self::$_messages[$lang] : false;
     } 
 }
