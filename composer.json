@@ -1,0 +1,14 @@
+{
+    "name": "marcosborges/helloworld",
+    "description": "PHP Hello World",
+    "type": "project",
+    "license": "O.S.",
+    "authors": [
+        {
+            "name": "Marcos Borges",
+            "email": "contato@marcosborges.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
