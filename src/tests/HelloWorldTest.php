@@ -2,9 +2,16 @@
 
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \HelloWorld
+ * 
+ */
 
 final class HelloWorldTest extends TestCase{
     
+    /**
+     * @covers \HelloWorld::getMessage
+     */
     public function testGetMessagePt() {
         $this->assertEquals(
             HelloWorld::getMessage('pt'),
@@ -12,6 +19,9 @@ final class HelloWorldTest extends TestCase{
         );
     }
     
+    /**
+     * @covers \HelloWorld::getMessage
+     */
     public function testGetMessageEn() {
         $this->assertEquals(
             HelloWorld::getMessage('en'),
@@ -19,6 +29,9 @@ final class HelloWorldTest extends TestCase{
         );
     }
 
+    /**
+     * @covers \HelloWorld::getMessage
+     */
     public function testGetMessageFail() {
         $this->assertEquals(
             HelloWorld::getMessage(''),
