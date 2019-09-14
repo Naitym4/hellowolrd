@@ -14,9 +14,9 @@
             "./"
         ]
     },
+    "scripts" : {
+        "test" : "docker run -v $PWD:/app borges_phpunit -c phpunit.xml"
+    },
     "minimum-stability": "stable",
-    "require": {},
-    "require-dev": {
-        "phpunit/phpunit": "^8.3"
-    }
+    "require": {}
 }

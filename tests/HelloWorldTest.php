@@ -1,17 +1,14 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use Borges\HelloWorld;
 
 /**
- * @covers \HelloWorld
+ * @covers \Borges\HelloWorld
  * 
  */
-
 final class HelloWorldTest extends TestCase{
     
-    /**
-     * @covers \HelloWorld::getMessage
-     */
     public function testGetMessagePt() {
         $this->assertEquals(
             HelloWorld::getMessage('pt'),
@@ -19,9 +16,6 @@ final class HelloWorldTest extends TestCase{
         );
     }
     
-    /**
-     * @covers \HelloWorld::getMessage
-     */
     public function testGetMessageEn() {
         $this->assertEquals(
             HelloWorld::getMessage('en'),
@@ -29,13 +23,19 @@ final class HelloWorldTest extends TestCase{
         );
     }
 
-    /**
-     * @covers \HelloWorld::getMessage
-     */
     public function testGetMessageFail() {
         $this->assertEquals(
             HelloWorld::getMessage(''),
             false
         );
     }
+
+    public function testAddMessage() {
+        HelloWorld::addMessage('es','Hola Mundo');
+        $this->assertEquals(
+            HelloWorld::getMessage('es'),
+            'Hola Mundo'
+        );
+    }
+    
 }
